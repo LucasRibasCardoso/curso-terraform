@@ -1,0 +1,22 @@
+**/.terraform/
+
+# Arquivos de estado e planos
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+crash.*.log
+
+# Variáveis que podem conter dados sensíveis
+*.tfvars
+*.tfvars.json
+
+# Sobrescritas locais
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Configuração local do Terraform
+.terraformrc
+terraform.rc
