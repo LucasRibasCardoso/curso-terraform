@@ -1,7 +1,7 @@
 module "network" {
-  source = "./network"
+  source = "./modules/network"
 
-  project_name       = local.project_name
+  project_name       = var.project_name
   cidr_block         = var.cidr_block
   availability_zones = var.availability_zones
 }

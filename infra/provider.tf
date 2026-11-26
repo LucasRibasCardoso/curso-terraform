@@ -18,10 +18,10 @@ terraform {
 }
 
 provider "aws" {
-  region = "us-east-1"
+  region = var.region
   default_tags {
     tags = {
-      Project = local.project_name
+      Project = var.project_name
     }
   }
 }
