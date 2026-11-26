@@ -21,7 +21,7 @@ provider "aws" {
   region = "us-east-1"
   default_tags {
     tags = {
-      Project = "curso-terraform"
+      Project = local.project_name
     }
   }
 }
